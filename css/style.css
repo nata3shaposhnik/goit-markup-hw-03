@@ -1,0 +1,238 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-title-color: #ffffff;
+  --background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+  --accent-color: #2196f3;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --accent-color-focus: #188ce8;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.page-list,
+.advantages-list,
+.work-list,
+.teams-list,
+.footer-list,
+.jobs-list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
+
+.page {
+  background-color: var(--background-color);
+}
+
+.logo {
+  color: var(--title-text-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* site-nav */
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.site-nav a {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.contact a {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.contact a:hover,
+.contact a:focus {
+  color: var(--accent-color);
+}
+
+/* main */
+/* service */
+
+.service {
+  background-color: var(--third-background-color);
+}
+
+.service-title {
+  color: var(--secondary-title-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.service-button {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.service-button:hover,
+.service-button:focus {
+  background-color: var(--accent-color-focus);
+}
+
+.section-title {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* section advantages*/
+
+.advantages-title {
+  color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  line-height: 1.71;
+}
+
+/* section work */
+
+/* section teams */
+
+.section.teams {
+  background-color: var(--secondary-background-color);
+}
+
+.teams-title {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.teams-description {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--third-background-color);
+}
+
+.footer .logo {
+  color: var(--secondary-title-color);
+}
+
+.address {
+  color: var(--footer-text-color);
+
+  font-style: normal;
+  line-height: 1.71;
+}
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+
+.address.maps {
+  color: var(--secondary-title-color);
+}
+
+/* portfolio */
+
+/* main Работы */
+
+.list-button:hover,
+.list-button:focus {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
+
+.list-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.list-button.active {
+  background-color: var(--accent-color);
+  color: var(--secondary-title-color);
+}
+
+.jobs-title {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.jobs-description {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
