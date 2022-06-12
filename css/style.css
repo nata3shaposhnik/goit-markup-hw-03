@@ -23,6 +23,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
   width: 1200px;
   /* border: 1px solid tomato; */
 }
@@ -72,7 +73,7 @@ img {
 /* header */
 
 .page {
-  border-bottom: 1px solid #ececec;
+  outline: 1px solid #ececec;
   background-color: var(--background-color);
 }
 
@@ -156,6 +157,8 @@ img {
 /* service */
 
 .service {
+  padding: 200px 0;
+
   background-color: var(--third-background-color);
   text-align: center;
 }
@@ -163,6 +166,9 @@ img {
 .service-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 
   color: var(--secondary-title-color);
   font-weight: 900;
@@ -285,7 +291,7 @@ img {
 }
 
 .card-content {
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .teams-title {
@@ -335,8 +341,11 @@ img {
   color: var(--secondary-title-color);
 }
 
-.footer-list .item + .item {
+/* .footer-list .item + .item {
   margin-top: 9px;
+} */
+.footer-list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* portfolio */
